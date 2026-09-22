@@ -175,8 +175,8 @@ On startup, `ProductDataSeeder` automatically ensures all 540 products from `res
 {
   "fullName": "Aashutosh Shrivastava",
   "address": {
-    "line1": "Flat 402, Royal Palms",
-    "street": "MG Road",
+    "address line 1": "Flat 402, Royal Palms",
+    "near by location": "Opposite City Mall, MG Road",
     "city": "Indore",
     "state": "Madhya Pradesh",
     "pin_code": "452001"
@@ -193,14 +193,14 @@ On startup, `ProductDataSeeder` automatically ensures all 540 products from `res
     "phoneNumber": "9876543210",
     "fullName": "Aashutosh Shrivastava",
     "address": {
-      "line1": "Flat 402, Royal Palms",
-      "street": "MG Road",
+      "address line 1": "Flat 402, Royal Palms",
+      "near by location": "Opposite City Mall, MG Road",
       "city": "Indore",
       "state": "Madhya Pradesh",
       "pin_code": "452001"
     },
     "role": "ROLE_CUSTOMER"
   },
-  "timestamp": "2026-09-22T13:10:00"
+  "timestamp": "2026-09-22T13:30:00"
 }
 ```
