@@ -93,8 +93,8 @@ class AuthControllerTest {
         Map<String, Object> req = Map.of(
                 "fullName", "Aashutosh Shrivastava",
                 "address", Map.of(
-                        "address line 1", "Flat 101",
-                        "near by location", "MG Road",
+                        "address_line_1", "Flat 101",
+                        "near_by_location", "MG Road",
                         "city", "Indore",
                         "state", "Madhya Pradesh",
                         "pin_code", "452001"
@@ -107,8 +107,8 @@ class AuthControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.success").value(true))
                 .andExpect(jsonPath("$.data.fullName").value("Aashutosh Shrivastava"))
-                .andExpect(jsonPath("$.data.address['address line 1']").value("Flat 101"))
-                .andExpect(jsonPath("$.data.address['near by location']").value("MG Road"))
+                .andExpect(jsonPath("$.data.address.address_line_1").value("Flat 101"))
+                .andExpect(jsonPath("$.data.address.near_by_location").value("MG Road"))
                 .andExpect(jsonPath("$.data.address.city").value("Indore"))
                 .andExpect(jsonPath("$.data.address.state").value("Madhya Pradesh"))
                 .andExpect(jsonPath("$.data.address.pin_code").value("452001"));

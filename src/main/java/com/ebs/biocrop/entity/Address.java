@@ -8,14 +8,14 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Address {
 
-    @Field("address line 1")
-    @JsonProperty("address line 1")
-    @JsonAlias({"address_line_1", "addressLine1", "line1", "address line 1"})
+    @Field("address_line_1")
+    @JsonProperty("address_line_1")
+    @JsonAlias({"addressLine1", "line1", "address line 1"})
     private String addressLine1;
 
-    @Field("near by location")
-    @JsonProperty("near by location")
-    @JsonAlias({"near by location", "nearby_location", "nearbyLocation", "street"})
+    @Field("near_by_location")
+    @JsonProperty("near_by_location")
+    @JsonAlias({"nearby_location", "nearbyLocation", "street", "near by location"})
     private String nearbyLocation;
 
     private String city;
@@ -23,7 +23,7 @@ public class Address {
 
     @Field("pin_code")
     @JsonProperty("pin_code")
-    @JsonAlias({"pin_code", "pinCode", "pincode"})
+    @JsonAlias({"pinCode", "pincode"})
     private String pinCode;
 
     public Address() {
@@ -37,22 +37,22 @@ public class Address {
         this.pinCode = pinCode;
     }
 
-    @JsonProperty("address line 1")
+    @JsonProperty("address_line_1")
     public String getAddressLine1() {
         return addressLine1;
     }
 
-    @JsonProperty("address line 1")
+    @JsonProperty("address_line_1")
     public void setAddressLine1(String addressLine1) {
         this.addressLine1 = addressLine1 != null ? addressLine1.trim() : null;
     }
 
-    @JsonProperty("near by location")
+    @JsonProperty("near_by_location")
     public String getNearbyLocation() {
         return nearbyLocation;
     }
 
-    @JsonProperty("near by location")
+    @JsonProperty("near_by_location")
     public void setNearbyLocation(String nearbyLocation) {
         this.nearbyLocation = nearbyLocation != null ? nearbyLocation.trim() : null;
     }
